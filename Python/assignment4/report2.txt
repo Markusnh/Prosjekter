@@ -1,0 +1,12 @@
+Report 2:
+
+Jeg kjørte blur_1.py 3 ganger som bruker standard python(med unntak av matrisene som holder verdiene) til å regne
+ut det blurra bildet, med en gjennomsnittlig tid på rundt 7.1 sekunder.
+
+Jeg kjørte også blur_2.py 3 ganger som bruker vektor-regning til å finne ut gjennomsnittlig verdi for pixlene
+og det brukte i gjennomsnitt 0.03 sekunder på å blurre bildet.
+
+I begge tilfellene brukte jeg hele bildet, dvs med dimensjoner (480,640,3).
+
+Som man her kan se er numpy-implementasjonen ekstremt mye raskere enn med vanlig standard python med for-loops. 
+Det går rundt 240 ganger raskere med numpy-implementasjoen enn med vanlig python.

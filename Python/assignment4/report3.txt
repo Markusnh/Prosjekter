@@ -1,0 +1,14 @@
+Report 3:
+
+Blur_1.py used around 7.1 seconds to blur the image, blur_2.py used 0.03 seconds. By running blur_3.py(using numba) three times 
+we get an average time of around 0.5 seconds. That is 14.2 times faster than the standard python implementation and 16.6 times slower 
+than the numpy implementation. 
+
+To use the numpy implementation the problem that is going to be solved has to be possible to do by matrix or vector calculation, probably not
+all problems can be solved this way. And if it is possible it may be a bit more difficoult to do than the standard python way. 
+
+Solving it with Numba is very easy, it is just to use the Jit function as decorator for a function implemented
+in the standard python way. Thus the complexity of using Numba is far less than Numpy, even though it actually may be more difficoult
+to debug using Numba, since the errors one get is not always that helpfull, if one get an error message at all.
+
+In conclusion, Numpy is faster but a wee bit more complex. Numba is not as fast as numpy, but also less complex to implement.
