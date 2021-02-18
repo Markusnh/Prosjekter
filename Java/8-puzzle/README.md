@@ -7,6 +7,10 @@ can be solved, so it checks after having made the random board configuration
 if it solvable or not, and makes a new random board until it has made a board
 that is solvable.
 
+I did this project soon after having completed IN1010 - Introduction to java and object oriented programming
+at University of Oslo. I read a lot about AI at the time and the A* algorithm I
+implemented here after having read about it in a book about AI algorithms.
+
 to run the program it needs to be compiled first, which can be done with
 the following command:
 
