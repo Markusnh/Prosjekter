@@ -4,10 +4,11 @@ and uses breadt-first search to find the quickest solution to solve the puzzle. 
 There are no solutions the final print to the terminal will be false, after it has run
 701 steps
 
-to run the program simply write in the terminal in this directory:
-
->java Test
-
-if the files are not compiled first, they need to be compiled, this can be done with:
+to run the program it needs to be compiled first, which can be done with
+the following command:
 
 >javac *.java
+
+After that the program can be run with the following command:
+
+>java Test
