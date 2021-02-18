@@ -28,6 +28,34 @@ class Brett{
     return new Brett(brett, size);
   }
 
+  public boolean checkIfSolvable(){
+    int inversions=0;
+    for (int i=0;i<size;i++){
+      for (int j=0;j<size;j++){
+        int utgangspunkt=this.brett[i][j].getTall();
+        if (utgangspunkt==0){
+          continue;
+        }
+        for (int k=i;k<size;k++){
+          for (int g=0;g<size;g++){
+            if (k==i && g<=j){
+              continue;
+            }else{
+              if (this.brett[k][g].getTall()!=0 && utgangspunkt>this.brett[k][g].getTall()){
+                inversions++;
+              }
+            }
+          }
+        }
+      }
+    }
+    if (inversions%2==0){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   public Brett(Tile[][] brett, int size){
     this.brett=brett;
     this.size=size;
@@ -135,7 +163,7 @@ class Brett{
     return brett1;
   }
 
-  public int heuristic(){   //gotta fix this;
+  public int heuristic(){
     int heuristic=0;
     for (int i=0;i<size;i++){
       for (int j=0;j<size;j++){

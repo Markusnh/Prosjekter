@@ -41,7 +41,7 @@ class Node{
     if (brett.equals(goalBrett)){
       brett.skrivUt();
       goal=true;
-      System.out.println("you have officially made it master");
+      System.out.println("you have officially made it");
       System.out.println("steps:"+steps+"\npath:"+path);
     }
 
@@ -136,8 +136,10 @@ class Node{
         lowestChild=leaves.get(i);
       }
     }
-    System.out.println("lowestF="+lowestF);
-    System.out.println("number of leaves="+leaves.size());
+
+    //only used for debug
+    //System.out.println("lowestF="+lowestF);
+    //System.out.println("number of leaves="+leaves.size());
 
     if (leaves.size()>700){
       System.out.println(goal);
